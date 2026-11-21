@@ -10,7 +10,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-8B5CF6?style=flat&logo=opensourceinitiative&logoColor=white)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Win%20%7C%20macOS%20%7C%20Linux-F43F5E?style=flat&logo=windows&logoColor=white)]()
 [![Stars](https://img.shields.io/github/stars/gray-pigeons/workbuddy-auto-signin?style=flat&logo=github&logoColor=white&color=F59E0B)](https://github.com/gray-pigeons/workbuddy-auto-signin/stargazers)
-[![Author](https://img.shields.io/badge/Author-88lin-10B981?style=flat&logo=github&logoColor=white)](https://github.com/88lin)
+[![Maintainer](https://img.shields.io/badge/Maintainer-gray--pigeons-10B981?style=flat&logo=github&logoColor=white)](https://github.com/gray-pigeons)
 
 </div>
 
@@ -18,7 +18,9 @@
 >
 > Qoder CN 与 TRAE SOLO CN 都是可选的独立功能，Windows 下可各自安装独立计划任务，不影响 WorkBuddy；详见[可选：Qoder CN](#qoder-cn)和[可选：TRAE SOLO CN](#trae-solo-cn)。
 >
-> 👤 作者：[88lin](https://dev.88lin.eu.org/) · 📦 仓库：[github.com/gray-pigeons/workbuddy-auto-signin](https://github.com/gray-pigeons/workbuddy-auto-signin)
+> 本项目基于原仓库 [88lin/workbuddy-auto-signin](https://github.com/88lin/workbuddy-auto-signin) 修改和扩展，原作者是 [88lin](https://dev.88lin.eu.org/)。感谢原作者的开源工作。
+>
+> 当前维护者：[gray-pigeons](https://github.com/gray-pigeons) · 项目仓库：[gray-pigeons/workbuddy-auto-signin](https://github.com/gray-pigeons/workbuddy-auto-signin)
 
 > [!TIP]
 > **⭐ 顺手点个 Star 再往下看**——签到接口是从桌面端逆向来的，腾讯改一版它就可能失效，修复都会第一时间推到这里。Star 一下，等哪天连签莫名其妙断了，你能一秒翻回这个仓库。
@@ -635,4 +637,4 @@ TRAE 签到接口及登录态格式根据客户端实现和公开自动化项目
 
 ## 📄 协议
 
-[MIT](LICENSE) © 2026 [88lin](https://dev.88lin.eu.org/) · 仓库：[github.com/gray-pigeons/workbuddy-auto-signin](https://github.com/gray-pigeons/workbuddy-auto-signin)
+[MIT](LICENSE) · © 2026 原作者 [88lin](https://dev.88lin.eu.org/) · 当前维护者：[gray-pigeons](https://github.com/gray-pigeons) · 仓库：[gray-pigeons/workbuddy-auto-signin](https://github.com/gray-pigeons/workbuddy-auto-signin)

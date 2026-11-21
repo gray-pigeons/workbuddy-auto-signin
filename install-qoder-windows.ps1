@@ -1,7 +1,7 @@
 ﻿# install-qoder-windows.ps1 — Qoder CN 每日 100 Credits 一键安装（Windows）
 #
 # 作者：88lin
-# 仓库：https://github.com/gray-pigeons/workbuddy-auto-signin
+# 仓库：https://github.com/88lin/workbuddy-auto-signin
 # 协议：MIT
 #
 # Qoder CN 个人用户每天可在桌面端领取 100 通用 Credits。本脚本只注册一个

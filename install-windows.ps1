@@ -1,7 +1,7 @@
 ﻿# install-windows.ps1 — WorkBuddy 自动签到一键安装（Windows）
 #
 # 作者：88lin
-# 仓库：https://github.com/gray-pigeons/workbuddy-auto-signin
+# 仓库：https://github.com/88lin/workbuddy-auto-signin
 # 协议：MIT
 #
 # 签到接口系从桌面端逆向所得，服务端改一版就可能失效——修复都会推到上面这个仓库。

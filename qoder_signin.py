@@ -1,7 +1,7 @@
 """Qoder CN 每日 100 Credits 自动领取脚本。
 
 作者：88lin
-仓库：https://github.com/gray-pigeons/workbuddy-auto-signin
+仓库：https://github.com/88lin/workbuddy-auto-signin
 协议：MIT
 
 Qoder CN 个人用户每天可在桌面端领取 100 通用 Credits。活动按 UTC+8 每天

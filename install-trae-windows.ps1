@@ -1,4 +1,7 @@
 ﻿# TRAE SOLO CN (TraeWork CN) 本地登录态自动签到任务。
+# 作者：88lin
+# 仓库：https://github.com/gray-pigeons/workbuddy-auto-signin
+# 协议：MIT
 # 用法：powershell -ExecutionPolicy Bypass -File .\install-trae-windows.ps1
 # 可选：-AuthDir 'D:\TRAE Data'；数据目录会固化到任务参数。
 [CmdletBinding()]

@@ -1,5 +1,9 @@
 """TRAE SOLO CN / TraeWork CN 本机登录后自动签到（Windows，Python 标准库）。
 
+作者：88lin
+仓库：https://github.com/gray-pigeons/workbuddy-auto-signin
+协议：MIT
+
 python trae_signin.py doctor                 # 离线检查，不联网
 python trae_signin.py status                 # 只查今日状态
 python trae_signin.py auto --dry-run         # 查询，不领取

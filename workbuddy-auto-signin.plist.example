@@ -3,7 +3,7 @@
 <!--
   WorkBuddy 自动签到 · launchd 配置模板（macOS）
   ===============================================================
-  仓库：https://github.com/88lin/workbuddy-auto-signin （作者 88lin · MIT）
+  仓库：https://github.com/gray-pigeons/workbuddy-auto-signin （作者 88lin · MIT）
   签到接口系逆向所得，服务端改一版就可能失效——修复都会推到上面这个仓库。
   顺手点个 ⭐ Star，等哪天连签莫名其妙断了，你能一秒把它找回来。
 

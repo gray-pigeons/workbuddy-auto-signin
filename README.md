@@ -1,24 +1,24 @@
 <div align="center">
 
-<img src="assets/cover.jpg" alt="workbuddy-auto-signin —— WorkBuddy / Qoder CN 自动领取脚本" width="100%">
+<img src="assets/cover.jpg" alt="workbuddy-auto-signin —— WorkBuddy / Qoder CN / TRAE SOLO CN 自动领取脚本" width="100%">
 
 # 🤖 workbuddy-auto-signin
 
-**每天自动领取 WorkBuddy 签到积分 + Qoder CN 每日 100 Credits 的小脚本**
+**WorkBuddy、Qoder CN 与 TRAE SOLO CN 本地登录态签到脚本**
 
-[![版本](https://img.shields.io/github/v/release/88lin/workbuddy-auto-signin?style=flat&logo=github&logoColor=white&label=%E7%89%88%E6%9C%AC&color=1F6FEB)](https://github.com/88lin/workbuddy-auto-signin/releases)
+[![版本](https://img.shields.io/github/v/release/gray-pigeons/workbuddy-auto-signin?style=flat&logo=github&logoColor=white&label=%E7%89%88%E6%9C%AC&color=1F6FEB)](https://github.com/gray-pigeons/workbuddy-auto-signin/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-8B5CF6?style=flat&logo=opensourceinitiative&logoColor=white)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Win%20%7C%20macOS%20%7C%20Linux-F43F5E?style=flat&logo=windows&logoColor=white)]()
-[![Stars](https://img.shields.io/github/stars/88lin/workbuddy-auto-signin?style=flat&logo=github&logoColor=white&color=F59E0B)](https://github.com/88lin/workbuddy-auto-signin/stargazers)
+[![Stars](https://img.shields.io/github/stars/gray-pigeons/workbuddy-auto-signin?style=flat&logo=github&logoColor=white&color=F59E0B)](https://github.com/gray-pigeons/workbuddy-auto-signin/stargazers)
 [![Author](https://img.shields.io/badge/Author-88lin-10B981?style=flat&logo=github&logoColor=white)](https://github.com/88lin)
 
 </div>
 
-> 两个自包含的 Python 脚本，每天分别帮你领取 **WorkBuddy**（腾讯 AI 编程助手）的签到积分和 **Qoder CN** 的 100 通用 Credits。两者都只读取你自己机器上的登录态，零内置密钥，可安全分享。
+> 自包含的 Python 脚本，帮你领取 **WorkBuddy**（腾讯 AI 编程助手）和 **TRAE SOLO CN** 的签到奖励，以及 **Qoder CN** 的 Credits。每个平台只读取你自己机器上的登录态，零内置密钥，可安全分享。
 >
-> Qoder CN 是可选的独立功能，Windows 下可一键安装独立计划任务，不影响 WorkBuddy；详见[可选：Qoder CN](#qoder-cn)。
+> Qoder CN 与 TRAE SOLO CN 都是可选的独立功能，Windows 下可各自安装独立计划任务，不影响 WorkBuddy；详见[可选：Qoder CN](#qoder-cn)和[可选：TRAE SOLO CN](#trae-solo-cn)。
 >
-> 👤 作者：[88lin](https://dev.88lin.eu.org/) · 📦 仓库：[github.com/88lin/workbuddy-auto-signin](https://github.com/88lin/workbuddy-auto-signin)
+> 👤 作者：[88lin](https://dev.88lin.eu.org/) · 📦 仓库：[github.com/gray-pigeons/workbuddy-auto-signin](https://github.com/gray-pigeons/workbuddy-auto-signin)
 
 > [!TIP]
 > **⭐ 顺手点个 Star 再往下看**——签到接口是从桌面端逆向来的，腾讯改一版它就可能失效，修复都会第一时间推到这里。Star 一下，等哪天连签莫名其妙断了，你能一秒翻回这个仓库。
@@ -66,6 +66,7 @@
 - ✅ 本机有 **Python 3**（任意版本，无需任何第三方包）
 - ⬜ 可选：装了 `git` 就能直接 `clone`；没有的话去仓库页面 **Code → Download ZIP** 解压，效果一样
 - 🎁 可选：想顺便自动领 **Qoder CN** 的每日 100 Credits，需已登录 Qoder CN 桌面端；见[可选：Qoder CN](#qoder-cn)
+- 🎁 可选：想启用 **TRAE SOLO CN（TraeWork CN）** 签到，需在 Windows 登录过该客户端；见[可选：TRAE SOLO CN](#trae-solo-cn)
 
 ---
 
@@ -94,7 +95,7 @@
 **第 1 步 · 拿到脚本**
 
 ```bash
-git clone https://github.com/88lin/workbuddy-auto-signin.git
+git clone https://github.com/gray-pigeons/workbuddy-auto-signin.git
 cd workbuddy-auto-signin
 ```
 
@@ -120,7 +121,7 @@ cd workbuddy-auto-signin
 
 > [!TIP]
 > **懒人一键**：上面两步都能省——直接把仓库链接丢给 WorkBuddy：
-> `帮我把这个仓库跑起来并设置每天 00:05 自动签到：https://github.com/88lin/workbuddy-auto-signin`
+> `帮我把这个仓库跑起来并设置每天 00:05 自动签到：https://github.com/gray-pigeons/workbuddy-auto-signin`
 > 它会自己 `clone`、建好自动化、把绝对路径和 Python 命令名一并填好。（这条是**一次性**的设置指令，和上面那条「每次触发时执行」的提示词不是一回事。）
 
 **想要成长中心轮询？** 再建一条自动化即可：计划设为「每 4 小时」，提示词照抄上面那句（**仍然用 `auto`**）。它会先查签到状态、未签才补，再跑成长中心——所以这条轮询顺带兜住了「00:05 没跑成」的情况；已签过时只是一个查询请求，不会重复领取。
@@ -137,7 +138,7 @@ cd workbuddy-auto-signin
 **第 1 步 · 拿到脚本**（两个系统通用；本地已有仓库就跳过）
 
 ```bash
-git clone https://github.com/88lin/workbuddy-auto-signin.git
+git clone https://github.com/gray-pigeons/workbuddy-auto-signin.git
 cd workbuddy-auto-signin
 ```
 
@@ -196,7 +197,7 @@ Get-Content signin.log -Tail 5   # 或用记事本打开
 
 > [!TIP]
 > **懒人一键**：直接把仓库链接发给 WorkBuddy，让它帮你装好——
-> `帮我 clone 这个仓库并运行 install-windows.ps1 完成自动签到设置：https://github.com/88lin/workbuddy-auto-signin`
+> `帮我 clone 这个仓库并运行 install-windows.ps1 完成自动签到设置：https://github.com/gray-pigeons/workbuddy-auto-signin`
 
 > [!NOTE]
 > Windows 侧用的是 `silent` / `silent-poll` 参数：结果写入 `signin.log` 而非 stdout，配合 `pythonw.exe`（无控制台窗口）实现完全静默。日志文件路径可用环境变量 `WORKBUDDY_SIGNIN_LOG` 覆盖。
@@ -223,7 +224,7 @@ launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/workbuddy-auto-signin.pl
 
 > [!TIP]
 > **懒人一键**：直接把仓库链接发给 WorkBuddy，让它帮你装好——
-> `帮我 clone 这个仓库，并按 workbuddy-auto-signin.plist.example 配好 macOS launchd 定时任务：https://github.com/88lin/workbuddy-auto-signin`
+> `帮我 clone 这个仓库，并按 workbuddy-auto-signin.plist.example 配好 macOS launchd 定时任务：https://github.com/gray-pigeons/workbuddy-auto-signin`
 
 > [!WARNING]
 > macOS 上有两个坑，踩中都是「任务静默失败、日志空空如也」：
@@ -252,7 +253,7 @@ launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/workbuddy-auto-signin.pl
 想先手动跑一次、确认脚本可用：
 
 ```bash
-git clone https://github.com/88lin/workbuddy-auto-signin.git
+git clone https://github.com/gray-pigeons/workbuddy-auto-signin.git
 cd workbuddy-auto-signin
 python signin.py auto
 ```
@@ -567,6 +568,33 @@ bash uninstall-qoder-macos.sh
 
 ---
 
+## 🎁 可选：TRAE SOLO CN 自动签到
+
+TRAE SOLO CN（客户端显示为 TraeWork CN）使用独立脚本，不影响 WorkBuddy 与 Qoder。它只读取 Windows 当前用户的本机登录数据：
+
+    %APPDATA%\TRAE SOLO CN\User\globalStorage\storage.json
+
+签到前先查当天状态；只有活动已开放且尚未签到时才领取。领取后会再次查状态确认。查询与领取都使用 SOLO Lite 产品标识；普通 Trae IDE 的登录目录与请求标识不会被自动采用。登录 token 过期后请打开 TRAE SOLO CN 桌面端重新登录；脚本不会刷新或改写客户端登录文件。
+
+安装独立 Windows 任务：
+
+    powershell -ExecutionPolicy Bypass -File .\install-trae-windows.ps1
+
+安装器先运行本地离线自检，通过后创建每天北京时间 00:10 的静默任务，并在当前 Windows 用户登录后补跑一次。安装过程不会执行签到。手动使用：
+
+    python trae_signin.py doctor
+    python trae_signin.py status
+    python trae_signin.py auto --dry-run
+    python trae_signin.py auto
+
+任务结果写入同目录 trae_signin.log；已签到和活动未开放的静默空跑默认不写日志。自定义数据目录可传安装参数 -AuthDir D:\TRAE\Data，或运行时设 TRAE_AUTH_DIR。TRAE_SIGNIN_LOG 可指定日志文件，TRAE_SIGNIN_LOG_EMPTY=1 会让静默空跑也写日志。卸载只需在任务计划程序删除 TraeSoloCNAutoSignin，或运行：
+
+    Unregister-ScheduledTask -TaskName "TraeSoloCNAutoSignin" -Confirm:$false
+
+TRAE 签到接口及登录态格式根据客户端实现和公开自动化项目整理，接口可能变更。令牌只在本机进程内存中使用，不会写入日志；本功能为 Windows 下的非官方实现，请遵守 TRAE 的服务条款。
+
+---
+
 ## 🔐 安全与隐私
 
 - 脚本只读取**你自己本机**的 WorkBuddy 会话文件，不含、不内嵌、不传输任何第三方密钥
@@ -591,13 +619,13 @@ bash uninstall-qoder-macos.sh
 </p>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/88lin/workbuddy-auto-signin/star-history/assets/my-star-history/star-history-dark.svg">
-  <img alt="Star History" src="https://raw.githubusercontent.com/88lin/workbuddy-auto-signin/star-history/assets/my-star-history/star-history-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gray-pigeons/workbuddy-auto-signin/star-history/assets/my-star-history/star-history-dark.svg">
+  <img alt="Star History" src="https://raw.githubusercontent.com/gray-pigeons/workbuddy-auto-signin/star-history/assets/my-star-history/star-history-light.svg">
 </picture>
 
 <div align="center">
 
-**看到这儿了，说明这脚本大概率对你有用 —— 那就[点个 ⭐ Star](https://github.com/88lin/workbuddy-auto-signin) 吧**
+**看到这儿了，说明这脚本大概率对你有用 —— 那就[点个 ⭐ Star](https://github.com/gray-pigeons/workbuddy-auto-signin) 吧**
 
 一秒的事，却能在接口哪天变了、脚本悄悄失灵时，让你还找得到回来的路。
 
@@ -607,4 +635,4 @@ bash uninstall-qoder-macos.sh
 
 ## 📄 协议
 
-[MIT](LICENSE) © 2026 [88lin](https://dev.88lin.eu.org/) · 仓库：[github.com/88lin/workbuddy-auto-signin](https://github.com/88lin/workbuddy-auto-signin)
+[MIT](LICENSE) © 2026 [88lin](https://dev.88lin.eu.org/) · 仓库：[github.com/gray-pigeons/workbuddy-auto-signin](https://github.com/gray-pigeons/workbuddy-auto-signin)
